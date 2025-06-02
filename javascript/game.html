@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+</head>
+<body>
+    <h1>Rock Paper Scissors Game</h1>
+
+    <button onclick="
+        const randomNumber = Math.random(); // fixed typo: 'math.randon' ➝ 'Math.random'
+        let computerMove = '';
+        let result = '';
+
+        if (randomNumber < 1/3) {
+            computerMove = 'Rock';
+        } else if (randomNumber < 2/3) {
+            computerMove = 'scissors';
+        } else {
+            computerMove = 'Scissors';
+        }
+
+        if (computerMove === 'rock') {
+            result = 'Tie';
+        } else if (computerMove === 'scissors') {
+            result = 'You tie';
+        } else {
+            result = 'You win';
+        }
+
+        alert(`You picked Rock, computer picked ${computerMove}. ${result}`);
+    ">Rock</button>
+
+    <button onclick=
+
+        "if (randomNumber < 1/3) {
+            computerMove = 'Rock';
+        } else if (randomNumber < 2/3) {
+            computerMove = 'scissors';
+        } else {
+            computerMove = 'Scissors';
+        }
+
+        if (computerMove === 'Rock') {
+            result = 'Tie';
+        } else if (computerMove === 'scissors') {
+            result = 'You lose';
+        } else {
+            result = 'You win';
+        }
+
+        alert(`You picked Rock, computer picked ${computerMove}. ${result}`);
+    ">paper"playGame('Paper')">Paper</button>
+    <button onclick="
+
+        if (randomNumber < 1/3) {
+            computerMove = 'Rock';
+        } else if (randomNumber < 2/3) {
+            computerMove = 'scissors';
+        } else {
+            computerMove = 'Scissors';
+        }
+
+        if (computerMove === 'Rock') {
+            result = 'Tie';
+        } else if (computerMove === 'scissors') {
+            result = 'You lose';
+        } else {
+            result = 'You win';
+        }
+
+        alert(`You picked Rock, computer picked ${computerMove}. ${result}`);
+    ">scissors playGame('Scissors')">Scissors</button>
+
+</body>
+</html>

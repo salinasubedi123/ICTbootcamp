@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript function</title>
+</head>
+<body>
+    <h1>Javascript function</h1>
+    <p> We are adding number <b>5</b> and <b>10</b>.
+     The result will be displayed after clicking button</p>
+
+     <button onclick="alert(addnumber(10))">Add</button>
+     <button onclick=" alert(addnumber(30,80))">Sum</button>
+     <button onclick="alert(addnumber(2,3))">Total</button>
+
+     <script>
+        function addnumber(a,b=200){
+            // let a = 5;
+            // let b =10;
+            // alert(`The Sum is ${a+b}`);
+            return a+b;
+            
+        }
+     </script> 
+    
+</body>
+</html>
